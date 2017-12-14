@@ -1,0 +1,58 @@
+.col-sm-12 {
+    margin-bottom: 2em;
+}
+@media (max-width: 767px) {
+    .col-sm-12 {
+        text-align: center;
+    }
+}
+
+// Start Footer
+
+footer {
+    background-color: $blue; 
+    vertical-align: bottom;
+    .row {
+        .col-sm-4 {
+            .left-side {
+                margin-top: .6em;
+                a {
+                    color: $white;
+                }
+            }
+            .center-side {
+                margin-top: .6em;
+                ul {
+                    text-decoration: none;
+                    margin-bottom: 7px;
+                    li {
+                        display: inline-block;
+                        a {
+                            color: $white;
+                            padding: .5em;
+                        }
+                    }
+                }
+            }
+            .right-side {
+                margin-top: .6em;
+                a {
+                    color: $white;
+                    padding: .5em;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 575px) { 
+    .left-side, .right-side {
+        text-align: center;
+    }
+ }
+@media (max-width: 767px) { 
+    .center-side, .right-side, .left-side {
+        text-align: center;
+    }
+ }
+
+//End Footer
