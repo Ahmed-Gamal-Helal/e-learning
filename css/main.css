@@ -23,7 +23,8 @@ nav {
   border: 0;
   border-radius: 0 !important;
   margin: 0;
-  height: 2em; }
+  height: 2em;
+  opacity: .9; }
   nav .container .navbar-collapse ul li {
     display: inline-flex;
     position: relative;
