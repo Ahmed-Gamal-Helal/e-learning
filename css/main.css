@@ -9,8 +9,7 @@
   max-width: 100%; }
 
 .row {
-  margin-left: 0;
-  flex: 1; }
+  margin-left: 0; }
 
 ul {
   list-style: none; }
@@ -18,39 +17,62 @@ ul {
 body {
   padding: 0; }
 
-.navbar {
-  padding: 0;
-  opacity: .9; }
+nav {
+  font-size: 1.5em;
+  font-weight: bold;
+  border: 0;
+  border-radius: 0 !important;
+  margin: 0;
+  height: 2em; }
+  nav .container .navbar-collapse ul li {
+    display: inline-flex;
+    position: relative;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 8em; }
+  nav .container .search a {
+    color: #FFF; }
 
-.navbar .navbar-brand {
-  width: 16%; }
-
-.navbar .navbar-collapse {
-  width: 84%;
-  position: relative; }
-
-.navbar .navbar-collapse .navbar-nav li {
-  display: inline-flex;
-  position: relative;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 182px; }
-
-.navbar ul li i {
-  color: #fff;
-  padding-top: 12px; }
+@media (max-width: 991px) {
+  .search {
+    display: none; } }
 
 .labels {
   margin-top: 1em;
   align-items: center; }
   .labels .row {
-    margin-top: 5em; }
+    margin-top: 5em;
+    display: block !important; }
     .labels .row a {
       padding: .5em; }
+
+@media (max-width: 575px) {
+  .labels {
+    margin-top: 4em; } }
 
 .grid {
   margin-top: 1em;
   margin-bottom: 2em; }
+  .grid .second-view {
+    border-top: 2px solid #79f5ff; }
+  .grid .row ul {
+    margin: 0; }
+    .grid .row ul .first {
+      border-right: 2px solid #79f5ff; }
+    .grid .row ul .last {
+      border-left: 2px solid #79f5ff; }
+    .grid .row ul .col-sm-4 {
+      transition: all .5s ease-in-out; }
+      .grid .row ul .col-sm-4:hover {
+        background-color: #EEE;
+        border-radius: 1em; }
+
+@media (max-width: 575px) {
+  .grid .second-view {
+    border-top: 0; }
+  .grid .col-sm-4 {
+    border: 2px solid #79f5ff;
+    margin-top: 1em; } }
 
 .col-sm-12 {
   margin-bottom: 2em; }
@@ -84,8 +106,4 @@ footer {
 
 @media (max-width: 575px) {
   .left-side, .right-side {
-    text-align: center; } }
-
-@media (max-width: 767px) {
-  .center-side, .right-side, .left-side {
-    text-align: center; } }
+    text-align: center !important; } }
