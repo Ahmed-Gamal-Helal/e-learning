@@ -11,9 +11,10 @@
 
 footer {
     background-color: $blue; 
-    vertical-align: bottom;
+    bottom:0;
+    opacity: .9;
     .row {
-        .col-sm-4 {
+        .col-sm-4{
             .left-side {
                 margin-top: .6em;
                 a {

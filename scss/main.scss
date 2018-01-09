@@ -17,6 +17,9 @@ ul {
 body {
     padding: 0;
 }
+a:hover {
+    text-decoration: none;
+}
 
 
 // @include media-breakpoint-up(xs) { 

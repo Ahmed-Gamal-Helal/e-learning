@@ -15,7 +15,9 @@
 
             }
             .col-sm-4 {
+                margin-right: none;
                 transition: all .5s ease-in-out;
+                
                 &:hover {
                     background-color: #EEE;
                     border-radius: 1em;
@@ -28,15 +30,47 @@
     .grid {
         .second-view {
             border-top: 0;
+            width: 100%;
+            ul {
+                width: 100%;
+            }
         }
-        .col-sm-4 {
+        li {
             border: 2px solid #79f5ff;
             margin-top: 1em;
-            a {
-                img {
-                    
-                }
+        }
+        
+    }
+}
+@media (max-width: 767px) { 
+    .grid {
+        .second-view {
+            border: 0;
+            ul {
+                width: 100%;
+            }
+        }
+        .col-sm-4 {
+            max-width: 100%;
+        }
+        li {
+            border: 2px solid #79f5ff;
+            margin-top: 1em;
+            }
+    }
+    .middle {
+        .row {
+            ul {
+                width: 100%;
+                li {
+                    border: 2px solid #79f5ff;
+                    margin-top: 1em;
+        }
+            }
+            .col-sm-4 {
+            max-width: 100%;
             }
         }
     }
- }
+}
+    
